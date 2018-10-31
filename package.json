@@ -1,5 +1,4 @@
 {
-  "preview": true,
   "name": "vscode-debug-launcher",
   "displayName": "Debug Launcher",
   "description": "Start debugging, without having to define any tasks or launch configurations, even from the terminal.",
