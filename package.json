@@ -1,0 +1,130 @@
+{
+  "preview": true,
+  "name": "vscode-debug-launcher",
+  "displayName": "Debug Launcher",
+  "description": "Start debugging, without having to define any tasks or launch configurations, even from the terminal.",
+  "icon": "resources/logo/logo-128x128.png",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "out/extension.js",
+  "publisher": "fabiospampinato",
+  "activationEvents": [
+    "onCommand:debugLauncher.auto",
+    "onCommand:debugLauncher.file",
+    "onCommand:debugLauncher.launch",
+    "onUri"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Debug Launcher - Configuration",
+      "properties": {
+        "debugLauncher": {
+          "type": "object",
+          "properties": {
+            "[project.node]": {
+              "type": "object",
+              "properties": {
+                "configuration": {
+                  "type": "object"
+                },
+                "commands": {
+                  "type": "array"
+                }
+              }
+            }
+          },
+          "patternProperties": {
+            "^\\[[a-zA-Z0-9_.-]*\\]$": {
+              "type": "object",
+              "description": "Debugger-specific configuration and commands overrides",
+              "properties": {
+                "configuration": {
+                  "type": "object",
+                  "description": "Debugger-specific configuration override",
+                  "default": {}
+                },
+                "commands": {
+                  "type": "array",
+                  "description": "Debugger-specific commands override",
+                  "default": []
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "debugLauncher.auto",
+        "title": "Debug Launcher: Auto"
+      },
+      {
+        "command": "debugLauncher.file",
+        "title": "Debug Launcher: File"
+      },
+      {
+        "command": "debugLauncher.launch",
+        "title": "Debug Launcher: Launch"
+      }
+    ],
+    "menus": {
+      "commandPalette": [
+        {
+          "command": "debugLauncher.launch",
+          "when": "false"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "rm -rf out && webpack --mode production",
+    "publish": "vsce publish && npm publish",
+    "compile": "webpack --mode development",
+    "compile:watch": "webpack --mode development --watch",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "bugs": {
+    "url": "https://github.com/fabiospampinato/vscode-debug-launcher/issues"
+  },
+  "author": {
+    "name": "Fabio Spampinato",
+    "email": "spampinabio@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fabiospampinato/vscode-debug-launcher.git"
+  },
+  "engines": {
+    "vscode": "^1.26.0"
+  },
+  "keywords": [
+    "vscode",
+    "vsc",
+    "extension",
+    "debug",
+    "launcher",
+    "terminal"
+  ],
+  "categories": [
+    "Debuggers",
+    "Other"
+  ],
+  "dependencies": {
+    "absolute": "0.0.1",
+    "json5": "^2.1.0",
+    "lodash": "^4.17.11",
+    "pify": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.116",
+    "@types/node": "^6.0.40",
+    "ts-loader": "^5.2.1",
+    "tslint": "^4.4.2",
+    "typescript": "^3.0.3",
+    "vscode": "^1.1.4",
+    "webpack": "^4.20.2"
+  }
+}
