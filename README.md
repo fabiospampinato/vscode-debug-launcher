@@ -6,7 +6,7 @@
 
 Start debugging, without having to define any tasks or launch configurations, even from the terminal.
 
-This extension will generate a launch configuration for you, unless you explicitly provide one, via one of its included launch configurations [providers](//TODO).
+This extension will generate a launch configuration for you, unless you explicitly provide one, via one of its included launch configurations [providers](https://github.com/fabiospampinato/vscode-debug-launcher/tree/master/src/providers).
 
 There's currently built-in support for Node.js projects/files and VSCode extensions. Support for other types of projects/files can be added easily, PRs are welcome.
 
@@ -151,7 +151,7 @@ debugger node /path/to/foo.js
 
 ## Settings
 
-Each launch configuration [provider](//TODO) has a name, you can overwrite its configuration and prepartion commands via the settings:
+Each launch configuration [provider](https://github.com/fabiospampinato/vscode-debug-launcher/tree/master/src/providers) has a name, you can overwrite its configuration and prepartion commands via the settings:
 
 ```js
 {
@@ -162,7 +162,7 @@ Each launch configuration [provider](//TODO) has a name, you can overwrite its c
       },
       "commands": [ // Commands to execute before launching the debugger
         "npm run bundle",
-        "./prepare
+        "./prepare"
       ]
     }
   }
