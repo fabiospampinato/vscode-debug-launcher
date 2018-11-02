@@ -91,6 +91,12 @@ Each launch configuration [provider](https://github.com/fabiospampinato/vscode-d
 
 - **[StatusBar Debugger](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-statusbar-debugger)**: this other extension has built-in support for Debug Launcher and allows you to debug with a click. Also it gives you a debugger in the statusbar.
 
+## Contributing
+
+If you found a problem, or have a feature request, please open an [issue](https://github.com/fabiospampinato/vscode-debug-launcher/issues) about it.
+
+If you want to make a pull request you can debug the extension using [Debug Launcher](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-debug-launcher).
+
 ## License
 
 MIT © Fabio Spampinato
