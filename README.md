@@ -89,6 +89,7 @@ Each launch configuration [provider](https://github.com/fabiospampinato/vscode-d
 
 ## Hints
 
+- **Restart**: in case the generated launch configuration requires the execution of some scripts in the terminal you'll have to trigger the `Debug Launcher: Auto` command again if you want to restart it properly, otherwise those scripts are not re-executed.
 - **[StatusBar Debugger](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-statusbar-debugger)**: this other extension has built-in support for Debug Launcher and allows you to debug with a click. Also it gives you a debugger in the statusbar.
 
 ## Contributing
