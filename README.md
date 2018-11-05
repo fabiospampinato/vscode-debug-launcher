@@ -1,7 +1,7 @@
 # Debug Launcher
 
 <p align="center">
-	<img src="https://raw.githubusercontent.com/fabiospampinato/vscode-debug-launcher/master/resources/logo/logo-128x128.png" alt="Logo">
+	<img src="https://raw.githubusercontent.com/fabiospampinato/vscode-debug-launcher/master/resources/logo/logo.png" width="128" alt="Logo">
 </p>
 
 Start debugging, without having to define any tasks or launch configurations, even from the terminal.
