@@ -1,3 +1,6 @@
+### Version 1.0.5
+- Readme: added a note about restarting the debugger
+
 ### Version 1.0.4
 - Readme: using hi-res logo
 
