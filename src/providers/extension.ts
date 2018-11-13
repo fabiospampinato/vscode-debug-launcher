@@ -13,7 +13,7 @@ async function extension ( rootPath = Utils.folder.getActiveRootPath () ) {
   const pkgPath = path.join ( rootPath, 'package.json' ),
         pkg = await Utils.file.readJSON ( pkgPath );
 
-  if ( !pkg || !pkg.displayName || !pkg.activationEvents ) return;
+  if ( !pkg || !pkg.displayName || ( !pkg.activationEvents && !pkg.contributes ) ) return;
 
   return {
     provider: 'extension',
