@@ -1,3 +1,6 @@
+### Version 1.0.6
+- Improved support for debugging VSCode themes
+
 ### Version 1.0.5
 - Readme: added a note about restarting the debugger
 
