@@ -112,14 +112,14 @@
     "Other"
   ],
   "dependencies": {
+    "@types/lodash": "^4.14.118",
+    "@types/node": "^10.12.8",
     "absolute": "0.0.1",
     "json5": "^2.1.0",
     "lodash": "^4.17.11",
     "pify": "^4.0.1"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.116",
-    "@types/node": "^6.0.40",
     "ts-loader": "^5.2.1",
     "typescript": "^3.0.3",
     "vscode": "^1.1.4",
