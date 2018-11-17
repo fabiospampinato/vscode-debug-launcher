@@ -12,23 +12,23 @@ import Utils from './utils';
 
 class DebugLauncherUriHandler implements vscode.UriHandler {
 
-	private disposables: vscode.Disposable[] = [];
+  private disposables: vscode.Disposable[] = [];
 
-	constructor () {
+  constructor () {
 
     this.disposables.push ( vscode.window.registerUriHandler ( this ) );
 
-	}
+  }
 
-	dispose () {
+  dispose () {
 
     this.disposables.forEach ( disposable => disposable.dispose () );
 
     this.disposables = [];
 
-	}
+  }
 
-	handleUri ( uri: vscode.Uri ) {
+  handleUri ( uri: vscode.Uri ) {
 
     const command = _.trim ( uri.path, '/' );
 
@@ -60,7 +60,7 @@ class DebugLauncherUriHandler implements vscode.UriHandler {
 
     return Commands[command]( ...args );
 
-	}
+  }
 
 }
 
