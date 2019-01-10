@@ -42,7 +42,19 @@ async function providers ( providers: Function[] = [], ...args ) {
 
     }
 
-    if ( launch.commands ) await Script.run ( launch.provider || provider, launch.commands );
+    if ( launch.commands ) {
+
+      try {
+
+        await Script.run ( launch.provider || provider, launch.commands );
+
+      } catch ( e ) {
+
+        return vscode.window.showErrorMessage ( '[Debug Launcher] An error occurred, check the terminal' );
+
+      }
+
+    }
 
     if ( launch.command ) return vscode.commands.executeCommand ( launch.command );
 

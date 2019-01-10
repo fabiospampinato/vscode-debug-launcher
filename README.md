@@ -73,6 +73,8 @@ Each launch configuration [provider](https://github.com/fabiospampinato/vscode-d
 }
 ```
 
+Debugging will fail if any of the provided commands to execute fails, check out what commands the [providers](https://github.com/fabiospampinato/vscode-debug-launcher/tree/master/src/providers) define and remove the ones you don't need.
+
 ## Demo
 
 #### Auto

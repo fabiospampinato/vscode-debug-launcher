@@ -36,7 +36,7 @@ class DebugLauncherUriHandler implements vscode.UriHandler {
 
     if ( !Commands[command] ) return vscode.window.showErrorMessage ( `No command named "${command}" found` );
 
-    const plainArgs = _.trim ( querystring.parse ( uri.query ).args || '', ',' );
+    const plainArgs = _.trim ( _.castArray ( querystring.parse ( uri.query ).args )[0] || '', ',' );
 
     let args = [_.attempt ( JSON.parse, plainArgs )];
 
