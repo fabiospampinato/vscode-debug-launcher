@@ -1,3 +1,6 @@
+### Version 2.0.0
+- Added support for detecting command errors
+
 ### Version 1.0.6
 - Improved support for debugging VSCode themes
 

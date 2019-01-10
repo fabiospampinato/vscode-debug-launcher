@@ -3,7 +3,7 @@
   "displayName": "Debug Launcher",
   "description": "Start debugging, without having to define any tasks or launch configurations, even from the terminal.",
   "icon": "resources/logo/logo-128x128.png",
-  "version": "1.0.6",
+  "version": "2.0.0",
   "license": "MIT",
   "main": "out/extension.js",
   "publisher": "fabiospampinato",
