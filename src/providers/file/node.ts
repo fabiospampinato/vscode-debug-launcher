@@ -12,7 +12,7 @@ async function node ( filePath = Utils.file.getActiveFilePath (), ...args ) {
   if ( /\.py$/.test ( filePath ) ) {
 
     return {
-      provider: 'file.node',
+      provider: 'file.python',
       configuration: {
         name: 'Python',
         type: 'python',
