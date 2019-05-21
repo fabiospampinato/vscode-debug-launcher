@@ -82,7 +82,7 @@ async function auto ( ...args ) {
 
 async function file ( ...args ) {
 
-  return providers ( [fileNode], [filePython], ...args );
+  return providers ( [fileNode, filePython], ...args );
 
 }
 
