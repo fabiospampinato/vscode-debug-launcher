@@ -5,7 +5,7 @@ import * as _ from 'lodash';
 import * as vscode from 'vscode';
 import Config from './config';
 import Script from './script';
-import {custom, extension, launchConfiguration, fileNode, filePython, projectNode, projectPython} from './providers';
+import {custom, extension, launchConfiguration, fileNode, filePython, projectNode} from './providers';
 
 /* COMMANDS */
 
@@ -76,7 +76,7 @@ async function providers ( providers: Function[] = [], ...args ) {
 
 async function auto ( ...args ) {
 
-  return providers ( [custom, launchConfiguration, extension, projectNode, projectPython, fileNode, filePython], ...args );
+  return providers ( [custom, launchConfiguration, extension, projectNode, fileNode, filePython], ...args );
 
 }
 
