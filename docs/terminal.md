@@ -3,7 +3,7 @@
 
 Some helper functions/plugins for launching the debugger from the terminal.
 
-They might need some adaptation to your system, especially if you're not on macOS.
+They will need some adaptation to your system, especially if you're not on macOS.
 
 ### Shell Function
 

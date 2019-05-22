@@ -47,6 +47,7 @@ You can substitute `<argN>` with an argument to pass to the command. Any JSON-pa
 Some examples:
 
 ```sh
+# The "open" command is macOS-specifc, under Linux you may use "xdg-open" and under Windows "start".
 open 'vscode://fabiospampinato.vscode-debug-launcher/auto?args=/path/to/project' # Trigger `Debug Launcher: Auto` on the provided path
 open 'vscode://fabiospampinato.vscode-debug-launcher/file?args=/path/to/foo.js' # Trigger `Debug Launcher: File` on the provided path
 open 'vscode://fabiospampinato.vscode-debug-launcher/launch?args={"type":"node","name":"Foo","request":"launch","program":"/path/to/foo.js"}' # Launch the debugger using a custom launch configuration
