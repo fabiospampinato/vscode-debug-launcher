@@ -8,7 +8,7 @@ Start debugging, without having to define any tasks or launch configurations, ev
 
 This extension will generate a launch configuration for you, unless you explicitly provide one, via one of its included launch configurations [providers](https://github.com/fabiospampinato/vscode-debug-launcher/tree/master/src/providers).
 
-There's currently built-in support for Node.js projects/files and VSCode extensions. Support for other types of projects/files can be added easily, PRs are welcome.
+There's currently built-in support for Node.js projects/files, Python files and VSCode extensions. Support for other types of projects/files can be added easily, PRs are welcome.
 
 ## Install
 
@@ -28,6 +28,7 @@ Run the `Debug Launcher: Auto` command to automatically start debugging. The lau
 - If your project is a VSCode extension => generate a launch configuration for it
 - If your project is a Node.js project and the `bin`/`main` field in `package.json` is set => generate a launch configuration for it
 - If your current file is a Node.js file => generate a launch configuration for it
+- If your current file is a Python file => generate a launch configuration for it
 
 #### File
 
