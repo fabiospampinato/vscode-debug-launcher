@@ -88,7 +88,9 @@ async function file ( ...args ) {
 
 async function launch ( ...args ) {
 
-  return providers ( [custom], ...args );
+  const firstArgument = args[0];
+
+  return providers ( [custom], firstArgument );
 
 }
 

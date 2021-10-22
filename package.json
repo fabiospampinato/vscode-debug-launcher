@@ -83,7 +83,8 @@
     "compile": "webpack --mode development",
     "compile:watch": "webpack --mode development --watch",
     "postinstall": "node ./node_modules/vscode/bin/install",
-    "test": "node ./node_modules/vscode/bin/test"
+    "test": "node ./node_modules/vscode/bin/test",
+    "package:local": "vsce package && code --install-extension vscode-debug-launcher-2.1.0.vsix"
   },
   "bugs": {
     "url": "https://github.com/fabiospampinato/vscode-debug-launcher/issues"
