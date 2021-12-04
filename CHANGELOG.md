@@ -1,3 +1,7 @@
+### Version 2.1.1
+- Fixed bug with launch providers
+
+
 ### Version 2.1.0
 - Added support for Python files
 

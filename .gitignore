@@ -42,5 +42,5 @@ typings
 out
 .vscode-test
 
-# vscode-debug-launcher .vsix extension file
-vscode-debug-launcher-*.vsix
+# VS Code .vsix extension file
+*.vsix

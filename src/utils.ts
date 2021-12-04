@@ -15,7 +15,9 @@ const Utils = {
 
   initCommands ( context: vscode.ExtensionContext ) {
 
-    const {commands} = vscode.extensions.getExtension ( 'fabiospampinato.vscode-debug-launcher' ).packageJSON.contributes;
+    const { commands } = vscode.extensions.getExtension(
+      "rimacautomobili.rimac-vscode-debug-launcher"
+    ).packageJSON.contributes;
 
     commands.forEach ( ({ command }) => {
 

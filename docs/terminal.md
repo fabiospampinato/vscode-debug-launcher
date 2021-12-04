@@ -11,7 +11,7 @@ For your convenience you can add the following function to your shell configurat
 
 ```sh
 function debug-launcher () {
-  open "vscode://fabiospampinato.vscode-debug-launcher/$1?args=${$(printf %s, ${@:2} )}"
+  open "vscode://rimacautomobili.rimac-vscode-debug-launcher/$1?args=${$(printf %s, ${@:2} )}"
 }
 
 ```
@@ -58,7 +58,7 @@ function debugger-inspect () {
       local cwd=`pwd -P`
       local app="$cwd/$app"
     fi
-    open "vscode://fabiospampinato.vscode-debug-launcher/auto?args=$app,${$(printf %s, $args )}"
+    open "vscode://rimacautomobili.rimac-vscode-debug-launcher/auto?args=$app,${$(printf %s, $args )}"
   else
     node --inspect-brk $app $args
   fi

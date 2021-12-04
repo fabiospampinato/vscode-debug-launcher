@@ -1,16 +1,16 @@
 {
-  "name": "vscode-debug-launcher",
-  "displayName": "Debug Launcher",
+  "name": "rimac-vscode-debug-launcher",
+  "displayName": "Rimac Debug Launcher",
   "description": "Start debugging, without having to define any tasks or launch configurations, even from the terminal.",
-  "icon": "resources/logo/logo-128x128.png",
-  "version": "2.1.0",
+  "icon": "resources/logo/logo.png",
+  "version": "2.1.1",
   "license": "MIT",
   "main": "out/extension.js",
-  "publisher": "fabiospampinato",
+  "publisher": "RimacAutomobili",
   "activationEvents": [
-    "onCommand:debugLauncher.auto",
-    "onCommand:debugLauncher.file",
-    "onCommand:debugLauncher.launch",
+    "onCommand:rimacDebugLauncher.auto",
+    "onCommand:rimacDebugLauncher.file",
+    "onCommand:rimacDebugLauncher.launch",
     "onUri"
   ],
   "contributes": {
@@ -56,22 +56,22 @@
     },
     "commands": [
       {
-        "command": "debugLauncher.auto",
+        "command": "rimacDebugLauncher.auto",
         "title": "Debug Launcher: Auto"
       },
       {
-        "command": "debugLauncher.file",
+        "command": "rimacDebugLauncher.file",
         "title": "Debug Launcher: File"
       },
       {
-        "command": "debugLauncher.launch",
+        "command": "rimacDebugLauncher.launch",
         "title": "Debug Launcher: Launch"
       }
     ],
     "menus": {
       "commandPalette": [
         {
-          "command": "debugLauncher.launch",
+          "command": "rimacDebugLauncher.launch",
           "when": "false"
         }
       ]
@@ -84,21 +84,21 @@
     "compile:watch": "webpack --mode development --watch",
     "postinstall": "node ./node_modules/vscode/bin/install",
     "test": "node ./node_modules/vscode/bin/test",
-    "package:local": "vsce package && code --install-extension vscode-debug-launcher-2.1.0.vsix"
+    "package:local": "vsce package && code --install-extension rimac-vscode-debug-launcher-2.1.1.vsix"
   },
   "bugs": {
-    "url": "https://github.com/fabiospampinato/vscode-debug-launcher/issues"
+    "url": "https://github.com/ipazanin/vscode-debug-launcher/issues"
   },
   "author": {
-    "name": "Fabio Spampinato",
-    "email": "spampinabio@gmail.com"
+    "name": "Rimac Automobili",
+    "email": "ivan.pazanin@rimac-automobili.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fabiospampinato/vscode-debug-launcher.git"
+    "url": "https://github.com/ipazanin/vscode-debug-launcher.git"
   },
   "engines": {
-    "vscode": "^1.26.0"
+    "vscode": "^1.62.0"
   },
   "keywords": [
     "vscode",
@@ -106,7 +106,8 @@
     "extension",
     "debug",
     "launcher",
-    "terminal"
+    "terminal",
+    "rimac"
   ],
   "categories": [
     "Debuggers",
